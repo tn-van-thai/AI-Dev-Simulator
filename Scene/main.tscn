@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://blealwbwk1lol"]
 
-[ext_resource type="Script" path="res://Scene/main.gd" id="1_r34rm"]
+[ext_resource type="Script" uid="uid://dgh7m4ljymqut" path="res://Scene/main.gd" id="1_r34rm"]
 [ext_resource type="PackedScene" uid="uid://v78o0k7ytuia" path="res://Scene/map.tscn" id="1_sblpm"]
 [ext_resource type="PackedScene" uid="uid://c2s7c5lgqgc08" path="res://Scene/player.tscn" id="2_r34rm"]
 [ext_resource type="PackedScene" uid="uid://cq5ewb5jejrrs" path="res://UI/computer_ui.tscn" id="3_r34rm"]
@@ -15,11 +15,9 @@ script = ExtResource("1_r34rm")
 
 [node name="Map" parent="." instance=ExtResource("1_sblpm")]
 
-[node name="Player" parent="." node_paths=PackedStringArray("computer_ui", "dialogue_ui", "dialogue_label") instance=ExtResource("2_r34rm")]
+[node name="Player" parent="." node_paths=PackedStringArray("computer_ui") instance=ExtResource("2_r34rm")]
 position = Vector2(322, 313)
 computer_ui = NodePath("../ComputerUI")
-dialogue_ui = NodePath("../DialougeLayer")
-dialogue_label = NodePath("../DialougeLayer/Panel/Label")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 scale = Vector2(0.1, 0.1)
