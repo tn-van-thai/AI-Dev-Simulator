@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://blealwbwk1lol"]
+[gd_scene load_steps=4 format=3 uid="uid://blealwbwk1lol"]
 
+[ext_resource type="Script" uid="uid://dgh7m4ljymqut" path="res://Scene/main.gd" id="1_r34rm"]
 [ext_resource type="PackedScene" uid="uid://v78o0k7ytuia" path="res://Scene/map.tscn" id="1_sblpm"]
 [ext_resource type="PackedScene" uid="uid://c2s7c5lgqgc08" path="res://Scene/player.tscn" id="2_r34rm"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_r34rm")
 
 [node name="Map" parent="." instance=ExtResource("1_sblpm")]
 
@@ -11,6 +13,8 @@
 position = Vector2(81, 31)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [connection signal="body_entered" from="Map/Area2D" to="Player" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Map/Area2D" to="Player" method="_on_area_2d_body_exited"]
