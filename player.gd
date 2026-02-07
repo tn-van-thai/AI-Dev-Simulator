@@ -10,7 +10,6 @@ extends CharacterBody2D
 # Kéo node Label hiển thị chữ vào đây
 @export var dialogue_label: Label 
 # Sau khi lưu code, hãy kéo node CanvasLayer vào ô này ở Inspector của Player
-@export var computer_ui: CanvasLayer
 
 
 var ethic_scale = 50; 
