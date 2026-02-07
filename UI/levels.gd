@@ -13,10 +13,16 @@ func _ready():
 	shuffle_children(Questions, ethic_values_pressing_yes, ethic_values_pressing_no)
 	Questions.get_child(0).visible = true
 
+	# for i in ethic_values_pressing_yes:
+	# 	print(i)
+		
+	# for i in ethic_values_pressing_no:
+	# 	print(i)
+
 func swap(arr, i, j):
-	arr[i] += arr[j]
-	arr[j] = arr[i] - arr[j]
-	arr[i] -= arr[j]
+	var temp = arr[i]
+	arr[i] = arr[j]
+	arr[j] = temp
 
 func shuffle_children(parent: Node, yes, no):
 	var children = parent.get_children()

@@ -15,9 +15,11 @@ script = ExtResource("1_r34rm")
 
 [node name="Map" parent="." instance=ExtResource("1_sblpm")]
 
-[node name="Player" parent="." node_paths=PackedStringArray("computer_ui") instance=ExtResource("2_r34rm")]
+[node name="Player" parent="." node_paths=PackedStringArray("computer_ui", "dialogue_ui", "dialogue_label") instance=ExtResource("2_r34rm")]
 position = Vector2(322, 313)
 computer_ui = NodePath("../ComputerUI")
+dialogue_ui = NodePath("../DialougeLayer")
+dialogue_label = NodePath("../DialougeLayer/Panel/Label")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 scale = Vector2(0.1, 0.1)
