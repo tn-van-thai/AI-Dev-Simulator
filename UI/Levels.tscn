@@ -21,9 +21,11 @@ IntroLabel = NodePath("Introduce/Label")
 
 [node name="WrongSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_m4xml")
+volume_db = -5.0
 
 [node name="CorrectSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_ssrh4")
+volume_db = -5.0
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3

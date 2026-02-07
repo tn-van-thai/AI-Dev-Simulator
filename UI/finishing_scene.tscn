@@ -1,10 +1,20 @@
-[gd_scene load_steps=6 format=3 uid="uid://bqpomrduhvgtw"]
+[gd_scene load_steps=7 format=3 uid="uid://c7wexy0bx8fkk"]
 
 [ext_resource type="Script" uid="uid://54j36bqw7fqn" path="res://UI/finishing_scene.gd" id="1_em8qp"]
 [ext_resource type="Texture2D" uid="uid://bnpp4gwa1pqwa" path="res://Room/blue-background-abstract-background-free-photo.png" id="2_4g263"]
-[ext_resource type="Script" path="res://UI/ethic_scale.gd" id="2_ax7ci"]
+[ext_resource type="Script" uid="uid://c2yrm0uxvlupx" path="res://UI/ethic_scale.gd" id="2_ax7ci"]
 [ext_resource type="Script" path="res://UI/endings.gd" id="3_ax7ci"]
 [ext_resource type="Script" path="res://UI/ethics_message.gd" id="4_opqp6"]
+
+[sub_resource type="GDScript" id="GDScript_4g263"]
+script/source = "extends Button
+
+
+
+
+func _on_pressed() -> void:
+	get_tree().reload_current_scene()
+"
 
 [node name="finishing_scene" type="CanvasLayer"]
 script = ExtResource("1_em8qp")
@@ -46,3 +56,15 @@ theme_override_constants/outline_size = 20
 theme_override_font_sizes/normal_font_size = 50
 horizontal_alignment = 1
 script = ExtResource("4_opqp6")
+
+[node name="Restart" type="Button" parent="."]
+visible = false
+offset_left = 748.0
+offset_top = 698.0
+offset_right = 931.0
+offset_bottom = 775.0
+theme_override_font_sizes/font_size = 50
+text = "Restart"
+script = SubResource("GDScript_4g263")
+
+[connection signal="pressed" from="Restart" to="Restart" method="_on_pressed"]

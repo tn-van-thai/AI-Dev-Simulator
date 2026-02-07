@@ -5,7 +5,7 @@ var full_text := ""
 var index := 0
 
 func start_text(value):
-    full_text = "your ethics : " + str(value)
+    full_text = "Ethics Score : " + str(int(((value + 140) / 380.0) * 100)) + "%"
     text = full_text
     visible_characters = 0
     index = 0

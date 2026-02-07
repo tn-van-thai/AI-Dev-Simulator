@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cq5ewb5jejrrs" path="res://UI/computer_ui.tscn" id="3_r34rm"]
 [ext_resource type="PackedScene" uid="uid://du5hw6brraj5o" path="res://UI/Levels.tscn" id="5_3amdw"]
 [ext_resource type="FontFile" uid="uid://uq0uitr0nlxj" path="res://Character/VCR_OSD_MONO_1.001.ttf" id="6_1xcnr"]
-[ext_resource type="PackedScene" uid="uid://bqpomrduhvgtw" path="res://UI/finishing_scene.tscn" id="7_ow1sv"]
+[ext_resource type="PackedScene" uid="uid://c7wexy0bx8fkk" path="res://UI/finishing_scene.tscn" id="7_ow1sv"]
 [ext_resource type="AudioStream" uid="uid://dke7a20gm1ccn" path="res://Room/A Lonely Cherry Tree 🌸 - Pix.mp3" id="8_75buv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1xcnr"]
