@@ -64,6 +64,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="finishing_scene" parent="." instance=ExtResource("7_ow1sv")]
+visible = false
 
 [connection signal="body_entered" from="Map/ComputerZone" to="Player" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Map/ComputerZone" to="Player" method="_on_area_2d_body_exited"]

@@ -108,3 +108,6 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 func modify_ethic(value : int):
 	ethic_scale += value
 	print(ethic_scale)
+
+func get_ethics():
+	return ethic_scale

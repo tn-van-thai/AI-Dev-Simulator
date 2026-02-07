@@ -19,8 +19,6 @@ offset_top = -2.0
 offset_right = 965.0
 offset_bottom = 660.0
 theme_override_font_sizes/normal_font_size = 100
-text = "Ethic: 100
-"
 horizontal_alignment = 1
 script = ExtResource("2_ax7ci")
 
@@ -30,10 +28,6 @@ offset_top = 393.0
 offset_right = 915.0
 offset_bottom = 819.0
 theme_override_font_sizes/normal_font_size = 50
-text = "The AI achieved perfect efficiency.
-	Crime disappeared. So did freedom.
-	People were safe—
-	but no longer free."
 horizontal_alignment = 1
 script = ExtResource("3_ax7ci")
 
@@ -43,6 +37,5 @@ offset_top = 190.0
 offset_right = 915.0
 offset_bottom = 615.99963
 theme_override_font_sizes/normal_font_size = 50
-text = "Absolute efficiency does not equal justice."
 horizontal_alignment = 1
 script = ExtResource("4_opqp6")

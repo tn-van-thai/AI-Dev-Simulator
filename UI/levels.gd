@@ -6,7 +6,7 @@ extends CanvasLayer
 var ethic_values_pressing_yes = [-10, -15, -10, -15, -10, -10, 15, 10, 15, 10, 10, 15, 15, 10, 10, 10]
 var ethic_values_pressing_no = [10, 15, 10, 10, 15, 10, -15, -10, -15, -10, -10, -15, -15, -10, -10, -10]
 
-signal isFinished
+signal isFinished(ethics_scale)
 
 # lowest ethic = -140
 # highest ethic = 240
@@ -57,13 +57,14 @@ func is_vaild_question(id):
 	return id < Questions.get_child_count()
 
 func on_button_pressed():
-
 	update_visibility(cur_question, false);
 
 	cur_question += 1
 	if (not is_vaild_question(cur_question)):
-		isFinished.emit()
+		isFinished.emit(Player.get_ethics())
+		return
 
+	print(cur_question, is_vaild_question(cur_question))
 	update_visibility(cur_question, true);
 
 
