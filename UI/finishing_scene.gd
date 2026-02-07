@@ -19,3 +19,6 @@ func play(ethics_scale):
 
 	await get_tree().create_timer(2).timeout
 	await $Endings.start_text(type)
+
+	await get_tree().create_timer(5).timeout
+	$Restart.visible = true
