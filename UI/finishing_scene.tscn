@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bqpomrduhvgtw"]
+[gd_scene load_steps=5 format=3 uid="uid://c7wexy0bx8fkk"]
 
-[ext_resource type="Script" uid="uid://54j36bqw7fqn" path="res://UI/finishing_scene.gd" id="1_em8qp"]
+[ext_resource type="Script" path="res://UI/finishing_scene.gd" id="1_em8qp"]
 [ext_resource type="Script" uid="uid://c2yrm0uxvlupx" path="res://UI/ethic_scale.gd" id="2_ax7ci"]
-[ext_resource type="Script" uid="uid://bm3b6wbd4l4s3" path="res://UI/endings.gd" id="3_ax7ci"]
-[ext_resource type="Script" uid="uid://bx5lehtvvqlpe" path="res://UI/ethics_message.gd" id="4_opqp6"]
+[ext_resource type="Script" path="res://UI/endings.gd" id="3_ax7ci"]
+[ext_resource type="Script" path="res://UI/ethics_message.gd" id="4_opqp6"]
 
 [node name="finishing_scene" type="CanvasLayer"]
 script = ExtResource("1_em8qp")
