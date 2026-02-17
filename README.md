@@ -10,7 +10,7 @@ play our game on itch.io
 
 Press E to move to the next dialogue option 
 
-Use WASD to move around to the computer on the floor
+Use the arrow keys to move around to the computer on the floor
 
 
 # link placeholder
